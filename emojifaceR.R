@@ -43,4 +43,4 @@ image_ggplot(image) +
     legend.position = "none"
   )
 
-ggsave(here::here("plots/emoji.png"), device = agg_png, width = 8, height = info$height / info$width * 8)
+ggsave(here::here("plots/emoji.png"), device = agg_png, dpi = 320, width = 8, height = info$height / info$width * 8)
